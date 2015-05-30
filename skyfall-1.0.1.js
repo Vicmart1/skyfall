@@ -1,8 +1,14 @@
-var max_horizontal_offset = 100;
-var duration = 5;
-var max_iterations = 1;
-var animation_timing = 'cubic-bezier(.98,0,1,.5)';
-var activated = false;
+var max_horizontal_offset = 100; //Determines how far left or right objects may travel//
+var duration = 5; //For how long should the objects fall (affects speed)//
+var max_iterations = 1; 
+/**
+Determines which divs will be affected. Divs who have max_iterations or less generations of div children will be animated 
+   -setting this to 0 only animates divs with no div children
+   -setting this to -1 animates every div
+**/
+var animation_timing = 'cubic-bezier(.98,0,1,.5)'; //Determines the style of animation timing//
+
+var activated = false; //Do not modify//
 
 function animate(obj) {
   if(!obj.hasClass('.excluded')) {
@@ -49,7 +55,7 @@ function iterateChildren(obj) {
     obj.children('div').each(function () {
       iterations = Math.max(iterateChildren($(this)), iterations);
     });
-    ++iterations <= max_iterations ? animate(obj) : 0;
+    (++iterations <= max_iterations || max_iterations == -1) ? animate(obj) : 0;
 
     return iterations;
   }
