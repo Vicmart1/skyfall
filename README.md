@@ -12,5 +12,6 @@ Adds a neat breakdown effect to any website with divs.
 And that's it! Enjoy!
 <h3>Customization</h3>
 You can change the values of the variables in the first couple of lines of skyfall.js to change the effects of the animation
-
+<h3>Known Issues</h3>
+The CSS animations used in Skyfall.js are not compatible with fixed-position divs. Currently, Skyfall.js works properly with absolute and relative positioned divs.
 <footer>Copyright 2015 Vicmart Inc, All Rights Reserved</footer>
