@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+      body{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #slider{
+        position: absolute;
+        z-index: 1;
+      }
+
+      div{
+        position: relative;
+        width: 12.5%;
+        height: 25%;
+        float: left;
+
+        z-index: 0;
+      }
+      
+      div:nth-of-type(1n + 0) {
+        background-color: red;
+      }
+
+      div:nth-of-type(2n + 0) {
+        background-color: orange;
+      } 
+      
+      div:nth-of-type(3n + 0) {
+        background-color: yellow;
+      }
+      
+      div:nth-of-type(4n + 0) {
+        background-color: green;
+      } 
+      
+      div:nth-of-type(5n + 0) {
+        background-color: blue;
+      }
+
+      div:nth-of-type(6n + 0) {
+        background-color: indigo;
+      }
+
+      div:nth-of-type(7n + 0) {
+        background-color: violet;
+      }
+    </style>
+  </head>
+<body>
+  <input type="range" id="slider" value="50" min="20" max = "80">
+  <script src='skyfall-1.0.1.js'></script>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      for(i = 0; i < 300; i++) {
+        $("body").append("<div class='activate'></div>");
+        $(document).on('click', '.activate', function() { appendClass(); });
+      }
+    });
+
+    $('#slider').on("change mousemove", function() {
+      $("div").css("width", ($(this).val()/4) + "%");
+      $("div").css("height", ($(this).val()/2) + "%");
+    });
+  </script>
+</body>
+</html>

@@ -61,6 +61,16 @@ function iterateChildren(obj) {
   }
 }
 
+function appendClass() {
+    if(!activated) {
+      activated = true;
+      $('body').children('div').each(function () {
+        iterateChildren($(this));
+      });
+      lockScroll();
+    }
+  }
+
 $('.activate').click(
 	function() {
     if(!activated) {
