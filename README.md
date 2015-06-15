@@ -1,10 +1,13 @@
 <h1>Skyfall.js</h1>
-Adds a neat breakdown effect to any website with divs.
+Adds a neat breakdown effect to any website with divs. A sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/Skyfall/blob/master/sample.html">here.</a>
 <h3>Usage</h3>
 <ul>
 <li>Download the .js file and place in the directory of your webpage.</li>
 <li>Add the following at the bottom of the body.<pre><code>&lt;script src='skyfall-1.0.1.js'>&lt;/script></code></pre></li>
 <li>Add the following class to the button or element you want to trigger on click <pre><code>activate</code></pre></li>
+<li>For dynamically created buttons or elements you want to trigger the animation, add the following line of code after its creation
+<pre><code>$(document).on('click', [identifier], function() { appendClass(); });</pre></code>
+where [identifier] is the object's class, type, or id</li>
 <li>Add the following class to any divs you want excluded from the animation
 <pre><code>excluded</code></pre></li>
 <li>Make sure you have jQuery installed. Instructions can be found <a href="http://www.w3schools.com/jquery/jquery_get_started.asp">here.</a></li>
