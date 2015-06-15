@@ -48,10 +48,28 @@
       div:nth-of-type(7n + 0) {
         background-color: violet;
       }
+
+      .text {
+        position: absolute;
+        width:140px;
+        margin-left:-70px;
+        left:50%;
+        z-index:2;
+
+        height: 70px;
+        margin-top:-35px;
+        top:50%;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 400%;
+        color: white;
+
+      }
     </style>
   </head>
 <body>
   <input type="range" id="slider" value="50" min="25" max = "80">
+  <p class="excluded text activate">Click</p>
   <script src='skyfall-1.0.1.js'></script>
   <script type="text/javascript">
     $( document ).ready(function() {
