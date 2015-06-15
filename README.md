@@ -3,7 +3,7 @@ Adds a neat breakdown effect to any website with divs. A sample can be seen <a h
 <h3>Usage</h3>
 <ul>
 <li>Download the .js file and place in the directory of your webpage.</li>
-<li>Add the following at the bottom of the body.<pre><code>&lt;script src='skyfall-1.0.1.js'>&lt;/script></code></pre></li>
+<li>Add the following at the bottom of the body.<pre><code>&lt;script src='skyfall-1.0.2.js'>&lt;/script></code></pre></li>
 <li>Add the following class to the button or element you want to trigger on click <pre><code>activate</code></pre></li>
 <li>For dynamically created buttons or elements you want to trigger the animation, add the following line of code after its creation
 <pre><code>$(document).on('click', [identifier], function() { appendClass(); });</pre></code>
