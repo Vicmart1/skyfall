@@ -12,12 +12,18 @@ Usage
    
    activate
 
-4. Add the following class to any divs you want excluded from the animation 
+4. For dynamically created buttons or elements you want to trigger the animation, add the following line of code after its creation
+
+   $(document).on('click', [identifier], function() { appendClass(); });
+
+where [identifier] is the object's class, type, or id
+
+5. Add the following class to any divs you want excluded from the animation 
    
    excluded
 
-5. Make sure you have jQuery installed.
-6. And that's it! Enjoy!
+6. Make sure you have jQuery installed.
+7. And that's it! Enjoy!
 
 Customization
 
