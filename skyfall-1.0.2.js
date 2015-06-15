@@ -11,7 +11,7 @@ var animation_timing = 'cubic-bezier(.98,0,1,.5)'; //Determines the style of ani
 var activated = false; //Do not modify//
 
 function animate(obj) {
-  if(!obj.hasClass('.excluded')) {
+  if(!obj.hasClass('excluded')) {
     obj.css('-webkit-transition', 'top ' + duration + 's ' + animation_timing + ', left ' + duration + 's ease-in');
     obj.css('-moz-transition', 'top ' + duration + 's ' + animation_timing + ', left ' + duration + 's ease-in');
     obj.css('-ms-transition', 'top ' + duration + 's ' + animation_timing + ', left ' + duration + 's ease-in');
