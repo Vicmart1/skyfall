@@ -51,11 +51,11 @@
     </style>
   </head>
 <body>
-  <input type="range" id="slider" value="50" min="20" max = "80">
+  <input type="range" id="slider" value="50" min="25" max = "80">
   <script src='skyfall-1.0.1.js'></script>
   <script type="text/javascript">
     $( document ).ready(function() {
-      for(i = 0; i < 300; i++) {
+      for(i = 0; i < 150; i++) {
         $("body").append("<div class='activate'></div>");
         $(document).on('click', '.activate', function() { appendClass(); });
       }
