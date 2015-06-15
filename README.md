@@ -1,5 +1,5 @@
 <h1>Skyfall.js</h1>
-Adds a neat breakdown effect to any website with divs. A sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/Skyfall/blob/master/sample.htm">here.</a>
+Adds a neat breakdown effect to any website with divs. A sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/Skyfall/blob/master/sample.html">here.</a>
 <h3>Usage</h3>
 <ul>
 <li>Download the .js file and place in the directory of your webpage.</li>
